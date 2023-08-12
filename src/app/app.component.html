@@ -1,0 +1,30 @@
+<div>
+ <h1>JSON Storage App</h1> 
+  <table class="table table-striped" >
+    <thead>
+        <tr>
+          <th>Id</th>
+          <th>Text</th>
+          <th>Description</th>
+          <th>Update Date</th>
+        </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let file of JSONFileData">
+        <td>{{ file.id }}</td>
+        <td>{{ file.text }}</td>
+        <td>{{ file.description }}</td>
+        <td>{{ file.updateDate }}</td>
+      </tr>
+    </tbody>
+  </table>
+
+  text:<textarea id="jsonTextbox" [(ngModel)]="jsonTextBoxVal" ></textarea><br/>
+  description: <input type="text"[(ngModel)]="jsonDescriptionBoxVal">
+  
+  
+  <button (click)="onAdd()">Add</button>
+</div>
+
+
+<router-outlet></router-outlet>

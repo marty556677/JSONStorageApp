@@ -1,0 +1,11 @@
+JSONFileApp
+
+An Angular App that integrates with the newly created JSONFileAPI to store various JSON files.
+
+1. Display the results of the "GetAllJSONFiles" functionality from the API in a table format, without the JSON text.
+2. Provide functionality to view and update the JSON text in a separate component, which is opened by clicking either the record or a button.
+	a. This would trigger the "Put" to the API.
+3. Provide functionality to add a new JSON file, either by copy/pasting the text or parsing a file. This would be separate (above or below) the grid, or on a separate component to the grid.
+	a. This would trigger the "Post" to the API.
+4. Provide functionality to delete an existing JSON file, should be triggered by a button tied to the grid rows.
+	a. This would trigger the "Delete" to the API.
